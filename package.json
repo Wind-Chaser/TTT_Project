@@ -1,0 +1,19 @@
+{
+  "name": "finding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bl": "^1.2.1",
+    "express": "^4.16.2",
+    "gramophone": "0.0.3",
+    "request": "^2.83.0",
+    "request-stream": "^1.2.2"
+  }
+}

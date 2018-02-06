@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Project Work</title>
+ </head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./main.css">
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl" class="container" align="center">
+    <div id="header">
+        <h1>Terribly Tiny Tales (TTT)
+        </h1>
+    </div>
+	<div id="input">
+		<input type="text" name="name" ng-model="value" placeholder="Enter a number N" required>
+		<input type="submit" name="submit" value="Submit" ng-click="submit()">
+		<div style="color:red;">
+		    <p>{{error}}</p>
+		</div>
+	</div>
+	<div id ="output" style="display:none;">
+	    <h3> The top N words and their frequency of occurrence</h3>
+	    <table class="table" align="center">
+	        <tbody>
+	            <tr>
+	               <th width="5%">S.No.</th>
+	               <th width="15%">Words</th>
+	               <th width="12%">Frequency</th>
+	            </tr>
+	            <tr ng-repeat="word in details">
+	               <td width="5%">{{$index+1}}</td>
+	               <td width="15%">{{word[0]}}</td>
+	               <td width="12%">{{word[1]}}</td>
+	            </tr>
+	        </tbody>
+	    </table>
+	 </div>   
+</div>
+
+<script type="text/javascript" src="./main.js"></script>
+
+</body>
+</html>

@@ -15,7 +15,7 @@
   ng-controller used for controlling application.
   
   var app = angular.module('myApp', []);
-  
+
   It declared an application myApp module.
 
   app.controller('myCtrl',['$scope','$http', function($scope,$http) {
@@ -89,10 +89,16 @@
   app.listen(process.env.PORT || 8080,function(){
     console.log("localhost at 8080",process.env.PORT);
   });
+
+  
   It is listening to port no 8080 and process environment port no ,on environment it is running. 
 
 AngularJS library is used for sending request and to show data in frontend.
+
+
 Express and Request module is used in backend.
+
+
 Hash Mapping concept is used to count occurences.      
 
 # Some ScreenShots

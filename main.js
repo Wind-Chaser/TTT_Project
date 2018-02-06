@@ -6,7 +6,6 @@ app.controller('myCtrl',['$scope','$http', function($scope,$http) {
     $http.get('/find?num='+$scope.value).then(function(response){
         document.getElementById('output').style="display:block;";
         $scope.details=response.data;
-        console.log($scope.details[0][0]);
         },function(error){
           console.log("error in http request");
     });

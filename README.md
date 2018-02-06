@@ -15,6 +15,7 @@
   ng-controller used for controlling application.
   
   var app = angular.module('myApp', []);
+  
   It declared an application myApp module.
 
   app.controller('myCtrl',['$scope','$http', function($scope,$http) {
@@ -63,7 +64,8 @@
 	  });
   It is requesting a file of URL 'http://terriblytinytales.com/test.txt' and store data in body.
 
-  var K = H.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } )
+  var K = H.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } );
+
   It just split the file according to space and filter out words only and remove white spaces.
 
 	for(var i in K) {

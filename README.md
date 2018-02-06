@@ -20,5 +20,5 @@ Hash Mapping concept is used to count occurences.
 
 # Some ScreenShots
 
-![img1]()
-![img2]()
+![img1](https://raw.githubusercontent.com/Wind-Chaser/TTT_Project/master/images/1.png)
+![img2](https://raw.githubusercontent.com/Wind-Chaser/TTT_Project/master/images/2.png)
